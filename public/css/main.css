@@ -27,8 +27,22 @@ body{
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
+.bg-glass-s{
+    background:none;
+}
+
 .color-glass{
     background: rgba( 255, 255, 255, 0.05 );
     backdrop-filter: blur( 10px );
     -webkit-backdrop-filter: blur( 10px );
+}
+
+@media screen and (max-width: 480px) {
+    .bg-glass-s{
+        background: rgba( 255, 255, 255, 0.05 );
+        box-shadow: 0 0px 10px 0px #ff8c28;
+        backdrop-filter: blur( 10px );
+        -webkit-backdrop-filter: blur( 10px );
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
 }
